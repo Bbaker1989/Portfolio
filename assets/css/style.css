@@ -27,7 +27,7 @@
     position: sticky;
     position: -webkit-sticky;
     top: 0;
-    background-image: url("../images/PageHeader.jpg");
+    background-image: url("../images/NewHeader.jpg");
     background-size: cover;
     background-attachment: fixed;
     background-position: 95%;
@@ -79,7 +79,7 @@
  
   /*HERO STYLING */
   .hero {
-    background-image: url("../images/PageHeader.jpg");
+    background-image: url("../images/NewHeader.jpg");
     height: 600px;
     background-size: cover;
     background-position: center;
