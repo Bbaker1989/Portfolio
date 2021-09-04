@@ -1,7 +1,7 @@
 :root {
     --primarywhite: #ffffff;
     --rose: #9E6F6D;
-    --cream: #F9DEC9;
+    --cream: #fcf7f3;
   }
   
   * {
@@ -83,8 +83,40 @@
     height: 600px;
     background-size: cover;
     background-position: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: flex-start;
   }
   
+  /*SECTION INTRO-TITLE STYLING*/
+  .section-title {
+    font-size: 45px;
+    border-bottom: 4px dotted;
+    color: var(--rose);
+    padding-bottom: 20px;
+    text-align: center;
+    margin: 0 auto 35px auto;
+    width: 50%;
+  }
+  
+  .primary-border {
+    border-color: var(--rose);
+  }
+
+    /* ABOUT ME STYLING*/
+
+ .intro {
+  line-height: 1.7;
+  color: var(--rose);
+  width: 100%;
+  margin: 0 auto;
+  font-size: 20px;
+  text-align: center;
+  background-color:var (var(--cream));
+}
+
+
   /* FOOTER STYLES START */
   footer {
     background: var(--rose);
