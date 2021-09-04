@@ -19,7 +19,7 @@
   /* HEADER / NAV BAR STYLES START */
   
   header {
-    padding: 20px 35px;
+    padding: 20px 20px;
     background-color: var(--cream);
     display: flex;
     justify-content: space-between;
@@ -30,8 +30,9 @@
     background-image: url("../images/PageHeader.jpg");
     background-size: cover;
     background-attachment: fixed;
-    background-position: 80%;
+    background-position: 95%;
     z-index: 9999;
+    border-style:ridge;
   }
   
   header h1 {
@@ -75,8 +76,14 @@
   }
   
   /* HEADER / NAVBAR STYLES END */
-  
-  
+ 
+  /*HERO STYLING */
+  .hero {
+    background-image: url("../images/PageHeader.jpg");
+    height: 600px;
+    background-size: cover;
+    background-position: center;
+  }
   
   /* FOOTER STYLES START */
   footer {
