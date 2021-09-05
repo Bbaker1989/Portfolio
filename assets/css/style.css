@@ -113,10 +113,160 @@
   margin: 0 auto;
   font-size: 20px;
   text-align: center;
-  background-color:var (var(--cream));
+  background-color: var(--cream);
 }
 
 /* PROJECTS */
+
+/*MAIN-PROJECT*/
+
+.main-project {
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .main {
+    margin: 20px;
+    flex: 1;
+    background: var(--rose);
+    color: var(--cream);
+  }
+  
+  .main img {
+    width: 100%;
+    opacity: 0.5;
+  }
+
+ .main img:hover {
+    opacity: 1.0;
+  }
+  
+  .main-structure {
+    padding: 25px;
+    line-height: 1.3;
+  }
+  
+  .main-name h3 {
+    font-size: 28px;
+  }
+
+  /*SMALL-PROJECTS*/
+  .projects {
+    width: 75%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .project {
+    margin: 20px;
+    flex: 1;
+    background: var(--rose);
+    color: var(--cream);
+  }
+  
+  .project img {
+    width: 100%;
+    opacity: 0.5;
+  }
+
+  .project img:hover {
+    opacity: 1.0;
+  }
+  
+  .project-structure {
+    padding: 25px;
+    line-height: 1.3;
+  }
+  
+  .project-name h3 {
+    font-size: 28px;
+  }
+
+
+  /* REACH OUT STYLES START */
+.contact {
+    background: var(--cream);
+  }
+  
+  .contact h2 {
+    color: var(--rose);
+  }
+  
+  .contact-info {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .contact-info > * {
+    flex: 1;
+    margin: 15px;
+  }
+  
+  .contact-info iframe {
+    height: 400px;
+  }
+  
+  .contact-info div {
+    color: var(--rose);
+  }
+  
+  .contact-info h3 {
+    color: var(--rose);
+    font-size: 32px;
+  }
+  
+  .contact-info p, .contact-info address {
+    margin: 20px 0;
+    line-height: 1.5;
+    font-size: 16px;
+    font-style: normal;
+  }
+  
+  .contact-form input, .contact-form textarea {
+    border: 1px solid gold;
+    display: block;
+    padding: 7px 15px;
+    font-size: 16px;
+    color: var(--rose);
+    width: 100%;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    border-radius: 10px;
+    background-color: rgba(255,255,255, 0.75);
+  }
+  
+  .contact-form input:focus, .contact-form textarea:focus {
+    background-color: rgba(255,255,255, 1);
+    outline: none;
+  }
+  
+  .contact-form button {
+    width: 100%;
+    border: none;
+    background: var(--rose);
+    color: var(--cream);
+    text-align: center;
+    padding: 15px 0;
+    font-size: 16px;
+    border-radius: 10px;
+  }
+  
+  .contact-form button:hover {
+    color: var(--cream);
+    background: var(--rose);
+  }
+  
+  .contact-info a {
+    color: var(--rose);
+  }
+  /* REACH OUT STYLES END */
+
 
   /* FOOTER STYLES START */
   footer {
@@ -145,4 +295,102 @@
   }
   /* END FOOTER STYLES */
 
+  /* UTILITIES */
+.text-left {
+    text-align: left;
+  }
+  
+  .text-right {
+    text-align: right;
+  }
+  
+  .flex-row {
+    display: flex;
+  }
+
+  /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+    header {
+      padding-bottom: 0;
+      justify-content: center;
+      position: relative;
+    }
+  
+    header h1 {
+      width: 100%;
+      text-align: center;
+    }
+  
+    header nav ul {
+      margin-top: 20px;
+      width: 100%;
+      justify-content: center;
+    }
+  
+    header nav ul li a {
+      font-size: 20px;
+    }
+  
+    footer h2, footer div {
+      text-align: center;
+      width: 100%;
+    }
+  
+   
+  
+    .section-title {
+      width: 80%;
+    }
+    
+    .main-project {
+      flex: 0 70%;
+    }
+    
+    .projects {
+        flex: 0 70%;
+      }
+  }
+  
+  /* MEDIA QUERY FOR TABLETS AND SMALLER */
+  @media screen and (max-width: 768px) {
+    section {
+      padding: 30px 15px;
+    }
+  
+    .main-name h3, {
+      display: block;
+    }
+  }
+  
+  /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+  @media screen and (max-width: 575px) {
+    
+    .section-title {
+      width: 95%;
+    }
+
+    .hero {
+        width: 100%;
+    }
+  
+    .intro p {
+      width: 100%;
+    }
+  
+    .projects {
+      flex: 0 100%;
+    }
+  
+    .contact-info {
+      text-align: center;
+    }
+  
+    .contact-info > * {
+      flex: 0 100%;
+    }
+  
+    .contact-form {
+      order: 3;
+    }
+  }
   
